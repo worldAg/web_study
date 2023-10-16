@@ -14,6 +14,13 @@ header {
   justify-content: space-between; /* 플렉스 박스 사용 시 justify-content 속성을 사용하여 공백 지정 */
   align-items: center;
   padding: 15px 60px;
+  /* 
+    header 뒤에 배경이미지가 위치하도록 
+    position: absolute로 header 요소가 문서 흐름(document flow)을 벗어나 부모 요소 기준으로 배치되도록 함
+  */
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #page-logo a {
@@ -32,4 +39,18 @@ header ul {
 
 header li {
   margin-left: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(255, 251, 0);
+  font-size: 20px;
+  padding: 12px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+header a:hover {
+  color: rgb(77, 77, 77);
+  background-color: rgb(255, 251, 0);
 }
