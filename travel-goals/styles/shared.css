@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  display: flex; /* flex 컨테이너를 지정(flex 개별 항목의 부모). flex 개별 항목의 레이아웃을 쉽게 관리할 수 있음. */
+  justify-content: space-between; /* 플렉스 박스 사용 시 justify-content 속성을 사용하여 공백 지정 */
+  align-items: center;
+  padding: 15px 60px;
+}
+
+#page-logo a {
+  padding: 10px;
+  font-family: "Oleo Script", sans-serif;
+  color: rgb(245, 243, 160);
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin-left: 20px;
+}
