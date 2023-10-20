@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  display: flex; /* flex 컨테이너를 지정(flex 개별 항목의 부모). flex 개별 항목의 레이아웃을 쉽게 관리할 수 있음. */
+  justify-content: space-between; /* 플렉스 박스 사용 시 justify-content 속성을 사용하여 공백 지정 */
+  align-items: center;
+  padding: 15px 60px;
+  /* 
+    header 뒤에 배경이미지가 위치하도록 
+    position: absolute로 header 요소가 문서 흐름(document flow)을 벗어나 부모 요소 기준으로 배치되도록 함
+  */
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#page-logo a {
+  padding: 10px;
+  font-family: "Oleo Script", sans-serif;
+  color: rgb(245, 243, 160);
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin-left: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(255, 251, 0);
+  font-size: 20px;
+  padding: 12px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+header nav a:hover {
+  color: rgb(77, 77, 77);
+  background-color: rgb(255, 251, 0);
+}
+
+footer {
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
+  padding: 36px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  width: 80px;
+  height: 80px;
+  margin: 0 50px;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+}

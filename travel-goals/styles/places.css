@@ -1,0 +1,73 @@
+body {
+  background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+  color: rgb(68, 68, 68);
+}
+
+#page-logo a {
+  color: rgb(183, 230, 235);
+}
+
+header {
+  position: static; /* shared.css에 적용된 position속성을 덮어쓰기 */
+}
+
+header a {
+  color: rgb(183, 230, 235);
+}
+
+header nav a:hover {
+  background-color: rgb(183, 230, 235);
+  color: rgb(59, 59, 59);
+}
+
+main ul {
+  margin: 0 auto 48px auto;
+  width: 1200px;
+  display: grid; /* grid 컨테이너 지정 */
+  grid-template-columns: 1fr 1fr; /* 1:1 비율인 2개의 열 지정 */
+  gap: 20px 20px; /* 행과 열 사이 간격 각 20px 지정 */
+}
+
+main li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+li:nth-of-type(3) {
+  grid-column: 1 / span 2; /* li의 세번째 요소가 첫 번째 라인에서 열 2칸 차지하도록 지정 */
+}
+
+main li img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.item-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-content {
+  margin: 0;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions a {
+  text-decoration: none;
+  padding: 6px;
+  color: rgb(22, 211, 228);
+  border-radius: 5px;
+}
+
+.actions a:hover {
+  background-color: rgb(235, 253, 255);
+}
