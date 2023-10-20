@@ -8,8 +8,11 @@ header {
 }
 
 main ul {
-  margin: 0 auto;
-  width: 800px;
+  margin: 0 auto 48px auto;
+  width: 1200px;
+  display: grid; /* grid 컨테이너 지정 */
+  grid-template-columns: 1fr 1fr; /* 1:1 비율인 2개의 열 지정 */
+  gap: 20px 20px; /* 행과 열 사이 간격 각 20px 지정 */
 }
 
 main li {
@@ -18,6 +21,10 @@ main li {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   overflow: hidden;
+}
+
+li:nth-of-type(3) {
+  grid-column: 1 / span 2; /* li의 세번째 요소가 첫 번째 라인에서 열 2칸 차지하도록 지정 */
 }
 
 main li img {
