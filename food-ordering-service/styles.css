@@ -9,16 +9,16 @@ a {
 }
 
 #main-header {
-  height: 80px;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(29, 26, 24);
-  padding: 0 20px;
+  padding: 0 5%;
 }
 
 #logo {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: rgb(238, 164, 80);
   text-transform: uppercase;
@@ -32,12 +32,12 @@ a {
 }
 
 #main-header li {
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 #main-header nav a {
   color: rgb(185, 131, 31);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 #main-header nav a:hover {
@@ -47,18 +47,18 @@ a {
 main h1 {
   text-align: center;
   color: rgb(228, 163, 44);
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 #latest-products {
   width: 80%;
-  margin: 50px auto;
+  margin: 2rem auto;
 }
 
 #latest-products ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -70,21 +70,43 @@ main h1 {
 }
 
 .food-item img {
-  height: 240px;
+  height: 15rem;
   width: 100%;
   object-fit: cover;
 }
 
 .food-item-content {
-  padding: 16px;
+  padding: 1rem;
   text-align: center;
+}
+
+h2 {
+  /* Comparing Units
+    ▪ px 
+      - 사용자의 장치와 상관없이 크기 지정(절대 단위).
+      - 사용자 정의 옵션 제한.
+      - 테두리 혹은 테두리 모서리 굴곡 등의 크기 지정 시 사용 적합.
+    ▪ %
+      - 부모 요소 크기에 의해 크기 변경(상대 단위). 
+      - 부모 요소에 종속적이므로 중첩된 요소들 안에서 크기 등을 지정할 수록 구조가 복잡해질 수 있음.
+      - 부모 요소에 지정된 크기가 없을 경우 사용자 브라우저 설정값에 따름. 
+    ▪ em
+      - 요소의 폰트 크기의 상대 단위. 
+      - 요소의 폰트 크기 지정 시 부모 요소 크기에 의해 크기 변경
+        (폰트 크기 지정 시 %와 동일하게 적용(1em = 100%))
+      - 폰트 크기 지정 시 부모 요소에 종속적이므로 중첩된 요소들 안에서 폰트 크기 등을 지정할 수록 구조가 복잡해질 수 있음.
+    ▪ rem
+      - 루트 요소(최상위 요소 <html>) 폰트 크기의 상대 단위.
+      - 최상위 요소에 지정된 폰트 크기가 없을 경우 사용자 브라우저 설정값에 따름. 
+  */
+  font-size: 2rem;
 }
 
 .btn {
   background-color: rgb(228, 157, 44);
   color: white;
   border-radius: 4px;
-  padding: 8px 24px;
+  padding: 0.5rem 1.5rem;
 }
 
 .btn:hover {
