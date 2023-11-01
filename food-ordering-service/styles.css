@@ -61,6 +61,7 @@ main h1 {
   gap: 1rem;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .food-item {
@@ -111,4 +112,18 @@ h2 {
 
 .btn:hover {
   background-color: rgb(221, 134, 34);
+}
+
+@media (max-width: 48rem) { /* 브라우저 폰트 크기 16px일 때 768px */
+  #main-header nav {
+    display: none;
+  }
+
+  main h1 {
+    font-size: 1.5em;
+  }
+
+  #latest-products ul{
+    grid-template-columns: 100%;
+  }
 }
