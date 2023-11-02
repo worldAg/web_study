@@ -83,7 +83,6 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: rgb(29, 26, 24);
   padding: 0 5%;
 }
 
@@ -107,7 +106,7 @@ a {
 
 main h1 {
   text-align: center;
-  color: rgb(228, 163, 44);
+  color: rgb(243, 189, 89);
   font-size: 3rem;
 }
 
@@ -142,7 +141,7 @@ main h1 {
   text-align: center;
 }
 
-h2 {
+.food-item h2 {
   /* Comparing Units
     ▪ px 
       - 사용자의 장치와 상관없이 크기 지정(절대 단위).
@@ -161,7 +160,8 @@ h2 {
       - 루트 요소(최상위 요소 <html>) 폰트 크기의 상대 단위.
       - 최상위 요소에 지정된 폰트 크기가 없을 경우 사용자 브라우저 설정값에 따름. 
   */
-  font-size: 2rem;
+  /*font-size: 2rem;*/
+  margin: 0 0 1rem 0;
 }
 
 .btn {
@@ -185,7 +185,7 @@ h2 {
   }
 
   main h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   #latest-products ul{
