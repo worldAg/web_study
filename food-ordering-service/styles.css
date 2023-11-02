@@ -31,6 +31,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  display: none;
 }
 
 .menu-btn span {
@@ -69,6 +70,21 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  display: none;
+}
+
+/* 가상 선택자 target은 현재 활성화 된 내부 링크의 특정 요소 영역에 스타일 적용 */
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(29, 26, 24);
+  padding: 0 5%;
 }
 
 #side-drawer ul {
@@ -162,6 +178,10 @@ h2 {
 @media (max-width: 48rem) { /* 브라우저 폰트 크기 16px일 때 768px */
   #main-header nav {
     display: none;
+  }
+
+  .menu-btn {
+    display: flex;
   }
 
   main h1 {
