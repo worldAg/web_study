@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <!--
+      <form>
+      • action속성은 URL 주소와 통로를 지정
+      • method속성은 서버에 전송되는 HTTP 요청의 종류 지정
+        - GET방식은 어떤 자원을 가져올 때 사용(HTML파일을 불러와서 그 내용을 화면에 보여주는 등)
+        - POST방식은 양식을 제출할 때 사용(데이터베이스에 입력 데이터를 저장하는 등)
+    -->
+    <form action="/" method="GET">
+      <label for="username">Your name</label> <!-- label요소의 for속성과 input요소의 id속성 값을 일치시켜 연결되도록 함 -->
+      <!-- 
+        <input>
+        • type속성
+          입력 받을 데이터의 타입 명시. 기본값 text.
+          타입에 맞지 않는 입력 값이라면 브라우저가 경고를 띄움.
+          또한 모바일로 해당 웹사이트를 접속한다면 각 input 타입에 맞는 키보드가 보여질 것.
+        • name속성
+           요소의 이름을 명시.
+           name속성을 통해 고유 식별자가 부여된 경우에만 GET 혹은 POST 요청 시 브라우저가 추가하는 메타데이터들과 함께 입력 데이터(form data)가 전송됨.
+           form 제출 후 서버에서 form data를 참조하거나 자바스크립트에서 요소를 참조하기 위해 사용.
+      -->    
+      <input type="text" name="user-name" id="username"/> <!-- A single-line input field -->
+      <label for="useremail">Your email address</label>
+      <input type="email" name="user-email" id="useremail" /> <!-- An input field optimized for email input(e.g. by showing an optimized keyboard on mobile phones) -->
+      <label for="userage">Your age</label>
+      <input type="number" step="0.5" name="user-age" id="userage" /> <!-- Optimized for number(with or without decimals) input. -->
+      <label for="userpwd">Your password</label>
+      <input type="password" name="user-password" id="userpwd" /> <!-- A password input field where the entered characters are hidden -->
+      <label for="birthdate">Your birthdate</label>
+      <input type="date" name="user-birthdate" id="birthdate" /> <!-- An input field where the browser opens a date picker overlay -->
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
