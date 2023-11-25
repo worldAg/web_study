@@ -41,6 +41,25 @@
       <input type="password" name="user-password" id="userpwd" /> <!-- A password input field where the entered characters are hidden -->
       <label for="birthdate">Your birthdate</label>
       <input type="date" name="user-birthdate" id="birthdate" /> <!-- An input field where the browser opens a date picker overlay -->
+      <hr>
+      <h2>How should we verify your account?</h2>
+      <div class="form-control-inline">
+        <!--
+          A radio button
+          :Can be used to present multiple options where only one option can be selected simultaneously.
+           name속성을 통해 입력을 그룹핑하여 하나의 옵션만 선택할 수 있도록 하고, 선택된 value속성(각 옵션의 식별자)의 값이 서버에 전달됨.
+        -->
+        <input type="radio" name="verify" id="verify-text-message" value="text-message" />
+        <label for="verify-text-message">Via text message (SMS)</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-phone" value="phone" />
+        <label for="verify-phone">Via a phone call</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-email" value="email" />
+        <label for="verify-email">Via an email</label>
+      </div>
       <button>Submit</button>
     </form>
   </body>
