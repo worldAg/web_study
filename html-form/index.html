@@ -43,12 +43,12 @@
       <input type="date" name="user-birthdate" id="birthdate" /> <!-- An input field where the browser opens a date picker overlay -->
       <hr>
       <h2>How should we verify your account?</h2>
+      <!--
+        A radio button
+        :Can be used to present multiple options where only one option can be selected simultaneously.
+         name속성을 통해 입력을 그룹핑하여 하나의 옵션만 선택할 수 있도록 하고, 선택된 value속성(각 옵션의 식별자)의 값이 서버에 전달됨.
+      -->
       <div class="form-control-inline">
-        <!--
-          A radio button
-          :Can be used to present multiple options where only one option can be selected simultaneously.
-           name속성을 통해 입력을 그룹핑하여 하나의 옵션만 선택할 수 있도록 하고, 선택된 value속성(각 옵션의 식별자)의 값이 서버에 전달됨.
-        -->
         <input type="radio" name="verify" id="verify-text-message" value="text-message" />
         <label for="verify-text-message">Via text message (SMS)</label>
       </div>
@@ -59,6 +59,24 @@
       <div class="form-control-inline">
         <input type="radio" name="verify" id="verify-email" value="email" />
         <label for="verify-email">Via an email</label>
+      </div>
+      <!--
+          A checkbox button
+          :Can be used to present a "toggle"(yes/no) option to the visitor(e.g. "Agree to terms")
+           단일 체크박스의 경우 체크되는 경우 on 값으로 서버에 전송됨(value속성 입력 불필요).
+           그러나 name속성을 통해 입력을 그룹핑하여 여러 옵션들을 선택할 시에는 value속성 필수로 입력 필요.
+      -->
+      <div class="form-control-inline">
+        <input type="checkbox" id="agree-terms" name="terms" />
+        <label for="agree-terms">Agree to terms?</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" id="contact-email" name="contact" value="email" />
+        <label for="contact-email">Contact me via email</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" id="contact-phone" name="contact" value="phone" />
+        <label for="contact-phone">Contact me via phone</label>
       </div>
       <button>Submit</button>
     </form>
