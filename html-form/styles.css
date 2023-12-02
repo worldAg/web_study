@@ -27,6 +27,10 @@ label {
   display: block;
 }
 
+textarea {
+  resize: none; /* 브라우저 화면에서 크기 조절 못하도록 함 */
+}
+
 input,
 textarea,
 select {
