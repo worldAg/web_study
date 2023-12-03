@@ -1,0 +1,82 @@
+body {
+  background-color: rgb(31, 30, 30);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+ul { /* 목록 스타일 제거 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 30rem;
+  margin: 3rem auto;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+textarea {
+  resize: none; /* 브라우저 화면에서 크기 조절 못하도록 함 */
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  /* inherit은 대부분의 CSS 속성에서 사용 가능하며, 해당 속성의 브라우저의 기본값보다 부모 요소로부터 상속되는 속성 값을 우선시 함 */
+  font: inherit;
+  border: 1px solid rgb(184, 184, 184);
+  padding: 0.25rem;
+  color: rgb(61, 58, 58);
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(219, 190, 253);
+  color: rgb(32, 5, 63);
+  border-color: rgb(32, 5, 63);
+}
+
+button {
+  display: inline-block;
+  font: inherit;
+  background-color: rgb(32, 5, 63);
+  color: white;
+  border: 1px solid rgb(32, 5, 63);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer; /* 버튼 위의 cursor가 손 아이콘으로 보이도록 함 */
+}
+
+#btn-actions {
+  text-align: center;
+}
+
+button:hover {
+  background-color: rgb(52, 14, 95);
+  border-color: rgb(52, 14, 95);
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+.form-control-inline input {
+  width: auto;
+  margin-right: 0.5rem;
+}
